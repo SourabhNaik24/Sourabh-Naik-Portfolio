@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sourabh Naik Portfolio</title>
+    <link rel = "icon" href =  "icon.PNG" type = "image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        header {
+            padding: 10px;
+            background: radial-gradient(1.5em 6.28571em at 1.95em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(1.5em 6.28571em at -0.45em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 1.5em 5.5em, radial-gradient(2.3em 4.57143em at 2.99em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(2.3em 4.57143em at -0.69em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 2.3em 4em, radial-gradient(3.5em 6.28571em at 4.55em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(3.5em 6.28571em at -1.05em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 3.5em 5.5em, radial-gradient(#15ffa5, #00ced1);
+            background-color: mediumspringgreen;
+            background-size: 1.5em 11em, 1.5em 11em, 2.3em 8em, 2.3em 8em, 3.5em 11em, 3.5em 11em, 100% 100%;
+            background-repeat: repeat;
+        }
+
+        header h1 {
+            font-size: 3em;
+            font-family: "Times New Roman", Times, serif;
+            margin-top: 1.17em;;
+        }
+
+        header h3 {
+            font-size: 1.5em;
+            font-family: "Times New Roman", Times, serif;
+            margin-top: 0.25em;
+        }
+
+        header img {
+            border-radius: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0.5em;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 20px;
+            text-align: center;
+            float: left;
+            color: white;
+            font-size: 20px;
+        }
+
+        html {
+            height:100%;
+        }
+
+        body {
+            margin:0;
+        }
+
+        .bg {
+            animation:slide 3s ease-in-out infinite alternate;
+            background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+            bottom:0;
+            left:-50%;
+            opacity:.5;
+            position:fixed;
+            right:-50%;
+            top:0;
+            z-index:-1;
+        }
+
+        .bg2 {
+            animation-direction:alternate-reverse;
+            animation-duration:4s;
+        }
+
+        .bg3 {
+            animation-duration:5s;
+        }
+
+        .content {
+            background-color:rgba(255,255,255,.8);
+            border-radius:.25em;
+            box-shadow:0 0 .25em rgba(0,0,0,.25);
+            box-sizing:border-box;
+            left:50%;
+            padding:10vmin;
+            position:fixed;
+            text-align:center;
+            top:50%;
+            transform:translate(-50%, -50%);
+        }
+
+        @keyframes slide {
+        0% {
+            transform:translateX(-25%);
+        }
+        100% {
+            transform:translateX(25%);
+        }
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        #section1 {
+            height: 990px;
+            
+        }
+
+        #section2 {
+            height: 1580px;
+            
+        }
+
+        #section3 {
+            height: 530px;
+            
+        }
+
+        #section4 {
+            height: 120px;
+            
+        }
+
+        #section5 {
+            height: 140px;
+            
+        }
+
+        .footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 10%;
+        }
+
+        span {
+            background-color: yellow;
+        }
+
+        span p {
+            font-size: 20px;
+        }
+
+        .trans {
+            -moz-opacity: 0.5;
+            -khtml-opacity: 0.5;
+            opacity: 0.5;
+        }
+
+        th {
+            font-family: monospace;
+        }
+
+        i {
+            text-decoration: none;
+            font-size: 80px;
+            color: black;
+        }
+
+        button:hover, i:hover {
+            opacity: 0.7;
+        }
+
+        li {
+            list-style-type: '👉';
+            padding-inline-start: 1ch;
+        }
+
+    </style>
+</head>
+<div class="main" id="section0">
+<header>
+        <img src="MyPhoto.jpg" alt="Myself" style="width:200px" class="center">
+        <h1 style="text-align:center">Hi, &#128075 Welcome To My Portfolio. I Am Sourabh Naik.</h1>
+        <h3 style="text-align:center">A Person Having Software &#128187 And Embedded &#128241 Skills.</h3>
+        <h3 style="text-align:center">Working With Cloud &#9729 And Web &#127760 Technologies </h3>
+        <h3 style="text-align:center">& A Strong Believer In DATA &#128202</h3>
+</header>
+</div>
+<nav>
+    <a href="#section1">Experiences</a>
+    <a href="#section2">Projects</a>
+    <a href="#section3">Achievements</a>
+    <a href="#section4">Hobbies</a>
+    <a href="#section5">Follow Me</a>
+    <a href="Sourabh_Naik_Resume.pdf" target="_blank">Resume</a>
+</nav>
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<div class="footer">
+    <a href="#section0">
+        <p>
+            <span>
+                Go Back to Top
+            </span>
+        </p>
+    </a>
+</div>
+<div class="main" id="section1">
+    <h1 style= text-align:center>
+        <span>
+            Experiences
+        </span>
+    </h1>
+    <table style="width:100%">
+        <tr>
+            <th>
+                <img class="trans" src="Accenture Logo.png">
+            </th>
+            <th>
+                <h1><b>Accenture [Dec 2020 - Present]</b></h1> 
+                <h1><b>Application Development Associate [Salesforce Developer]</b></h1>
+                <h3 style= text-align:justify>
+                    <li>Participating in complete development process from requirement analysis to deployment of the project.</li>
+                </h3>
+                <h3 style= text-align:justify>
+                    <li>Meeting with senior analysts and team members to gather business requirements and working in an Agile project environment.</li>
+                </h3>
+                <h3 style= text-align:justify>
+                    <li>Developing custom and out of the box solutions using Salesforce functionality like APEX and SOQL.</li>
+                </h3>
+                <h3 style= text-align:justify>
+                    <li>Working on Saleforce Health Cloud.</li>
+                </h3>
+            </th> 
+            <th>
+                <img class="trans" src="Salesforce.jpg">
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <img class="trans" src="JP.png">
+            </th>
+            <th>
+                <h1><b>JPMorgan Chase & Co. [May 2020 - June 2020]</b></h1> 
+                <h1><b>Software Developer, Virtual Internship Program</b></h1>
+                <h3 style= text-align:justify>
+                    <li>The first task was to interface with a stock price data feed and set up the system for analysis of the data.</li>
+                </h3>
+                <h3 style= text-align:justify>
+                    <li>Implemented the Perspective open source code in preparation for data visualization.</li>
+                </h3>
+                <h3 style= text-align:justify>
+                    <li>Used the Perspective an interactive visualization component for large and real-time datasets to
+                    create the chart for the trader's dashboard.</li>
+                </h3>
+                <h3 style= text-align:justify>
+                    <li>Technologies involved where git for distributed version control, python, typescript and finance analysis.</li>
+                </h3>
+            </th> 
+            <th>
+                <img class="trans" src="JpTech.jpg">
+            </th> 
+        </tr>
+        <tr>
+            <th>
+                <img class="trans" src="Intellegre Logo.png">
+            </th>
+            <th>
+                <h1><b>Intellegre LLC [Jan 2020 - May 2020]</b></h1> 
+                <h1><b>Embedded Software Engineer Intern</b></h1>
+                <h3 style= text-align:justify>
+                    <li>Understood the concepts of PIC32MZ microcontroller and developed a Graphic User Interface (GUI) for a
+                    specific application using software’s such as MPLAB X IDE and X32.</li>
+                </h3>
+                <h3 style= text-align:justify>
+                    <li>Wrote firmware’s for LCD, touch screen and various widgets like buttons, scroll bar and battery indicator etc
+                    for GUI.</li>
+                </h3>
+                <h3 style= text-align:justify>
+                    <li>Held technical calls among the team members for effective execution of work and managed the deadlines for
+                    various things related to this internship.</li>
+                </h3>
+                <h3 style= text-align:justify>
+                    <li>esigned and Tested Printed Circuit Board for the system using Express PCB/SCH softwares.</li>
+                </h3>
+            </th> 
+            <th>
+                <img class="trans" src="dash.PNG">
+            </th> 
+        </tr>
+    </table>
+</div>
+  
+<div class="main" id="section2">
+        <h1 style= text-align:center>
+            <span>
+                Projects
+            </span>
+        </h1>
+        <table style="width:100%">
+            <tr>
+                <th>
+                    <h1><b>Data Logger</b></h1> 
+                    <h3 style= text-align:justify>
+                        <li>The proposed system was sponsored project from 'Sunsui Process System'.</li>
+                    </h3>
+                    <h3 style= text-align:justify>
+                        <li>The system is made easy and helpful for the measurements of physical parameter i.e. temperature for the industrial purpose in different applications and electrical parameters they are voltage and current.</li>
+                    </h3>
+                    <h3 style= text-align:justify>
+                        <li>The work carried out has been concentrated on the design and development of both hardware and
+                        software for cost effective data acquisition system (DAS), which are used for measuring varying
+                        physical variables.</li> 
+                    </h3>
+                    <h3 style= text-align:justify>
+                        <li>Physical parameters such as temperature, voltage, current etc., which are generally considered as varying signals, are measured by the designed Data Logger.</li>
+                    </h3>
+                </th> 
+                <th>
+                    <img class="trans" src="Data Logger.jpg">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <img class="trans" src="SIH.jpg">
+                </th>
+                <th>
+                    <h1><b>Classification of Types of Automobile Fractures using Convolutional Neural Networks</b></h1> 
+                    <h3 style= text-align:justify>
+                        <li>This project got selected for the problem statement of ARAI company for the Grand Finale of Smart India Hackathon 2019 Software Edition.</li>
+                    </h3>
+                    <h3 style= text-align:justify>
+                        <li>Tackled with data redistribution, construction of neural network, GUI creation and model analysis in python.</li>
+                    </h3>
+                    <h3 style= text-align:justify>
+                        <li>The Hackathon lasted for straight two days and was conducted in NIT Patna on 1st week of March 2019. Our team was the runner up amongst approximately 30 to 35 teams for that particular problem statement.</li>
+                    </h3>
+                </th> 
+            </tr>
+            <tr>
+                <th>
+                    <h1><b>Advanced Turnstile Entrance Access Gate</b></h1> 
+                    <h3 style= text-align:justify>
+                        <li>Biometric security systems are gaining tremendous demand and popularity these days. It plays a vital role in an electronic entrance.</li>
+                    </h3>
+                    <h3 style= text-align:justify>
+                        <li>However, some biometric systems are not reliable while some are easy to hack and expensive.</li>
+                    </h3>
+                    <h3 style= text-align:justify>
+                        <li>This project suggests a low cost multimodal biometric-based electronic entrance access gate which uses face recognition and fingerprint detection to identify the correct person and allows entry to the authorized person only.</li>
+                    </h3>
+                    <h3 style= text-align:justify>
+                        <li>It provides two-step authentication i.e. identification and authentication to offer better security.</li>
+                    </h3>
+                </th> 
+                <th>
+                    <video width="650" controls>
+                        <source src="Model1.mp4" type="video/mp4">
+                      </video>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <img src="Antenna.jpg">
+                </th>
+                <th>
+                    <h1><b>Study and Design of Microstrip Patch Antenna for WLAN Frequency Application with Rectangular Slot</b></h1> 
+                    <h3 style= text-align:justify>
+                        <li>In this project, a rectangular micro strip patch antenna is designed and simulated for WLAN applications. The antenna is fed by a micro strip line which is designed to operate at desired application frequency.</li>
+                    </h3>
+                    <h3 style= text-align:justify>
+                        <li>It consists of a rectangular patch with a rectangular slot at the center. A low cost FR4 Epoxy material is used as antenna's substrate.</li>
+                    </h3>
+                    <h3 style= text-align:justify>
+                        <li>Simulation has realized by using HFSS software and the results shows that the antenna resonates at the frequency of WLAN.</li>
+                    </h3>
+                </th> 
+            </tr>
+            <tr>
+                <th>
+                    <h1><b>Arduino Based Bluetooth Control Servo Motor</b></h1> 
+                    <h3 style= text-align:justify>
+                        <li>This is a project designed to control Servo motor by using Arduino board and Bluetooth module.</li>
+                    </h3>
+                    <h3 style= text-align:justify>
+                        <li>We have designed a Mobile Application for controlling the angular position of the Servo motor and the simulation of all the working of the project is shown on our computer via web cam.</li>
+                    </h3>
+                    <h3 style= text-align:justify>
+                        <li>We can use this technology for various application such as in Robotic arm, Pneumatic systems, Hydraulic systems, Industrial and Automation applications, etc.</li> 
+                    </h3>
+                    <h3 style= text-align:justify>
+                        <li>In this project we have demonstrated the concrete mixer application.</li>
+                    </h3>
+                </th> 
+                <th>
+                    <img class="trans" src="ardunio.PNG">
+                </th>
+            </tr>
+        </table>
+</div>
+
+<div class="main" id="section3">
+    <h1 style= text-align:center>
+        <span>
+            Achievements
+        </span>
+    </h1>
+    <h1 style="text-align: center">
+        <u>Publications:</u>
+    </h1>
+    <h2 style= text-align:justify>
+        <li>Published a paper entitled “Classification of Types of Automobile Fractures Using Convolutional Neural Network” in Springer- International Conference (ICMLIP-2019).</li>
+    </h2>
+    <h2 style= text-align:justify>
+        <li>Published 11 articles till date on “GeeksforGeeks” related to cryptography, encoding and decoding algorithms of data which comes under information theory and coding techniques.</li>
+    </h2>
+    <h2 style= text-align:justify>
+        <li>Published a paper entitled “Study and Design of Microstrip Patch Antenna for WLAN Frequency Application with Rectangular Slot” in IEEE - International Conference on Electrical, Communication, Electronics, Instrumentation and Computing (ICECEIC)</li>
+    </h2>
+    <h1 style="text-align: center">
+        <u>Award:</u>
+    </h1>
+    <h2 style= text-align:justify>
+        <li>Runner up in Smart India Hackathon 2019 Grand Finale for Software Edition</li>
+    </h2>
+</div>
+  
+<div class="main" id="section4">
+    <h1 style= text-align:center>
+        <span>
+            Hobbies
+        </span>
+    </h1>
+    <h1 style= text-align:center>Gaming &#127918,          Play Chess &#9812,         Watch & Play Cricket &#127951,          Reading Books &#128214,          Traveling &#9992</h1>
+</div>
+
+<div class="main" id="section5">
+    <h1 style= text-align:center>
+        <span>
+            Follow Me
+        </span>
+    </h1>
+    <div class="contact" style="margin: 20px 0;">
+        <h1 style= text-align:center>   
+            <a href = "https://github.com/SourabhNaik24" target = "_blank"><i class="fa fa-github"></i></a> 
+            <a href="https://www.linkedin.com/in/sourabhnaik24/" target = "_blank"><i class="fa fa-linkedin"></i></a>  
+        </h1>
+    </div>
+</div>
+
+</html>
